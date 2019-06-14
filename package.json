@@ -1,0 +1,21 @@
+{
+  "name": "local-dev-server",
+  "version": "1.0.0",
+  "description": "local development server,forward the server-side interface using the proxy service",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "npm run dev",
+    "pm2debug": "pm2 start index.js --node-args=\"--inspect\" --watch"
+  },
+  "author": "liuchen@300.cn",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "http-proxy-middleware": "^0.18.0",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-connect": "^1.0.2"
+  }
+}
