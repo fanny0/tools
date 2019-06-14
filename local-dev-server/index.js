@@ -34,7 +34,7 @@ const middleware=c2k(
   })
 )
 
-router.all('!/public/**',middleware);
+router.all(middleware);
 
 const app = new Koa()
 app.use(static(staticPath))
